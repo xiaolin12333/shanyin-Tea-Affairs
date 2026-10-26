@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1310">
+  <meta name="description" content="山隐茶事：以茶山、茶人、茶席与数据为线索的当代东方茶文化体验。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b1310'/%3E%3Cpath d='M12 43 27 19l8 13 5-8 12 19Z' fill='none' stroke='%23caa46b' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="./assets/user-tea-valley.jpg" fetchpriority="high">
+  <title>山隐茶事 · 一盏茶，见山河</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <defs>
+      <linearGradient id="goldGradient" x1="0" x2="1">
+        <stop offset="0" stop-color="#e4c995"/>
+        <stop offset="1" stop-color="#a77d49"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m2 20 6-11 4 7 3-5 7 9Z"/><path d="m7 12 2 2 2-3"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20.4 3.6C12.8 3 6.3 6.5 4.2 12.4c-1.2 3.4.5 6.5 3.5 7.4 2.9.9 6.1-.7 7.6-3.3 1.8-3 1.8-7.1 5.1-12.9Z"/><path d="M4.7 19.4c2.9-4.7 6.3-8 10.6-11"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8"/><path d="M5.5 9.5V21h13V9.5"/><path d="M9.5 21v-6h5v6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20V7"/><path d="M2 20h20"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8Z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8Z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.8 20c.4-4 2.7-6.2 6.2-6.2s5.8 2.2 6.2 6.2"/><path d="M15 5.2a3.2 3.2 0 0 1 0 6.2M16.5 14.6c2.9.4 4.5 2.3 4.7 5.4"/></symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 8h13v5.5c0 4.2-2.6 7.5-6.5 7.5S4 17.7 4 13.5Z"/><path d="M17 10h1.8a3 3 0 0 1 0 6H17M7 3.5c1.4 1 .1 2 1.5 3M11 2.5c1.4 1 .1 2 1.5 3"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.5-5 3.3-7.5 8-7.5S19.5 16 20 21"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M5 18h14l-1.5-2.5V10a5.5 5.5 0 0 0-11 0v5.5Z"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m8 5 7 7-7 7"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m5 8 7 7 7-7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4Z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3.5h12v17L12 17l-6 3.5Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8.5-5.1-8.5-12A5 5 0 0 1 12 5.5 5 5 0 0 1 20.5 9c0 6.9-8.5 12-8.5 12Z"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.5-4.5M8.2 13.2l7.5 4.5"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4ZM17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m3 11 18-8-7 18-3.2-7.2Z"/><path d="M10.8 13.8 21 3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2S5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z"/></symbol>
+    <symbol id="i-thermometer" viewBox="0 0 24 24"><path d="M10 14.5V5a2 2 0 1 1 4 0v9.5a4.5 4.5 0 1 1-4 0Z"/><path d="M12 9v8"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M5 21h14M4 7h16M7 7l-3 7h6ZM17 7l-3 7h6Z"/></symbol>
+    <symbol id="i-fire" viewBox="0 0 24 24"><path d="M13 2c1 5-4 6-4 10a3 3 0 0 0 6 0c0-2-1-3-1-3 4 2 6 5 6 8.5A6.5 6.5 0 0 1 13.5 24 7 7 0 0 1 6 17c0-4.2 3-6.2 7-15Z"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h8"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M7 12V6.5a1.5 1.5 0 0 1 3 0V11M10 11V5.5a1.5 1.5 0 0 1 3 0V11M13 11V6.5a1.5 1.5 0 0 1 3 0V12M16 10.5V9a1.5 1.5 0 0 1 3 0v7c0 4.5-2.5 6-6.5 6S7 20.5 6 18l-2-4a1.7 1.7 0 0 1 2.8-1.8l2.2 2.3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.3 3 14.7 0 18M12 3c-3 3.3-3 14.7 0 18"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10 5h4M11 18.5h2"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M4 5h16v12H9l-5 4Z"/><path d="M8 9h8M8 13h5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><path d="M7 18c6 0 4-9 10-10"/></symbol>
+  </svg>
+
+  <div class="auth-layer" id="authLayer" aria-hidden="false">
+    <div class="auth-backdrop"></div>
+    <div class="auth-grain"></div>
+    <header class="auth-brand">
+      <a href="#/home" class="brand" aria-label="山隐茶事首页">
+        <span class="brand-seal"><svg><use href="#i-mountain"></use></svg></span>
+        <span class="brand-name">山隐茶事<small>MOUNTAIN TEA JOURNAL</small></span>
+      </a>
+      <button class="round-button auth-lang" aria-label="切换语言"><svg><use href="#i-globe"></use></svg></button>
+    </header>
+    <section class="auth-story">
+      <p class="eyebrow"><span></span>东方茶文化生活志</p>
+      <h1>一盏茶，<br><em>见山河。</em></h1>
+      <p class="auth-lead">从一片叶子的山场、工艺与风味出发，在真实数据与东方审美之间，找到属于你的那杯茶。</p>
+      <div class="auth-ritual">
+        <span><svg><use href="#i-mountain"></use></svg>茶山</span>
+        <span><svg><use href="#i-wind"></use></svg>风土</span>
+        <span><svg><use href="#i-cup"></use></svg>茶席</span>
+      </div>
+    </section>
+    <section class="auth-card" aria-labelledby="authTitle">
+      <div class="auth-tabs" role="tablist" aria-label="账户操作">
+        <button class="auth-tab active" data-auth-mode="login" role="tab" aria-selected="true">登录</button>
+        <button class="auth-tab" data-auth-mode="register" role="tab" aria-selected="false">注册</button>
+      </div>
+      <div class="auth-card-head">
+        <p>欢迎回到山隐</p>
+        <h2 id="authTitle">继续你的茶事</h2>
+      </div>
+      <form id="authForm" novalidate>
+        <label class="field-label" for="authName" data-register-only hidden>你的称呼</label>
+        <div class="input-shell" data-register-only hidden>
+          <svg><use href="#i-user"></use></svg>
+          <input id="authName" name="name" autocomplete="name" placeholder="如何称呼你">
+        </div>
+        <label class="field-label" for="authPhone">手机号码</label>
+        <div class="input-shell">
+          <svg><use href="#i-phone"></use></svg>
+          <input id="authPhone" name="phone" inputmode="tel" autocomplete="tel" placeholder="输入演示手机号">
+        </div>
+        <label class="field-label" for="authPassword">密码</label>
+        <div class="input-shell">
+          <svg><use href="#i-lock"></use></svg>
+          <input id="authPassword" name="password" type="password" autocomplete="current-password" placeholder="至少 6 位">
+          <button type="button" class="reveal-password" aria-label="显示密码"><svg><use href="#i-eye"></use></svg></button>
+        </div>
+        <label class="agree-row">
+          <input type="checkbox" id="authAgree" checked>
+          <span class="fake-check"><svg><use href="#i-check"></use></svg></span>
+          <span>我已阅读并同意《用户协议》与《隐私说明》</span>
+        </label>
+        <p class="form-error" id="authError" role="alert"></p>
+        <button class="button button-gold button-wide" type="submit">
+          <span id="authSubmitText">进入山隐</span>
+          <svg><use href="#i-arrow"></use></svg>
+        </button>
+      </form>
+      <div class="auth-divider"><span>或</span></div>
+      <div class="social-login">
+        <button type="button" aria-label="微信登录"><span class="wechat-mark"></span></button>
+        <button type="button" aria-label="手机快捷登录"><svg><use href="#i-phone"></use></svg></button>
+        <button type="button" aria-label="游客浏览"><svg><use href="#i-mountain"></use></svg></button>
+      </div>
+      <button class="guest-enter" id="guestEnter">暂不登录，先逛一逛 <svg><use href="#i-chevron"></use></svg></button>
+      <p class="demo-note">演示模式：输入任意有效手机号与 6 位以上密码即可体验。</p>
+    </section>
+  </div>
+
+  <div class="site" id="site">
+    <header class="site-header" id="siteHeader">
+      <a href="#/home" class="brand compact" aria-label="山隐茶事首页">
+        <span class="brand-seal"><svg><use href="#i-mountain"></use></svg></span>
+        <span class="brand-name">山隐茶事<small>MOUNTAIN TEA JOURNAL</small></span>
+      </a>
+      <nav class="desktop-nav" id="desktopNav" aria-label="主导航">
+        <a href="#/home" data-nav="home">首页</a>
+        <a href="#/culture" data-nav="culture">茶文化</a>
+        <a href="#/regions" data-nav="regions">山河茶图</a>
+        <a href="#/ai" data-nav="ai">AI 茶事</a>
+        <a href="#/community" data-nav="community">茶友社区</a>
+        <a href="#/collection" data-nav="collection">茶集</a>
+        <div class="nav-more">
+          <button aria-expanded="false" aria-haspopup="true">更多 <svg><use href="#i-chevron-down"></use></svg></button>
+          <div class="more-menu">
+            <a href="#/audit">数据图谱</a>
+            <a href="#/articles">茶事文章</a>
+            <a href="#/experience">茶席体验</a>
+            <a href="#/profile">我的茶库</a>
+            <a href="#/about">关于山隐</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-trigger" aria-label="搜索"><svg><use href="#i-search"></use></svg><span>搜索</span></button>
+        <button class="icon-button notification-trigger" aria-label="通知"><svg><use href="#i-bell"></use></svg><i></i></button>
+        <button class="avatar-button" id="avatarButton" aria-label="账户菜单"><span id="avatarInitial">山</span></button>
+        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="打开导航"><svg><use href="#i-menu"></use></svg></button>
+      </div>
+      <div class="account-menu" id="accountMenu">
+        <div class="account-summary">
+          <span class="avatar-button"><span id="menuAvatarInitial">山</span></span>
+          <div><strong id="menuUserName">山隐茶客</strong><small>观茶者 · 初阶</small></div>
+        </div>
+        <a href="#/profile"><svg><use href="#i-user"></use></svg>我的茶库</a>
+        <a href="#/profile"><svg><use href="#i-bookmark"></use></svg>收藏与预约</a>
+        <button id="logoutButton"><svg><use href="#i-arrow"></use></svg>退出演示账户</button>
+      </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="drawer-head">
+        <span>浏览山隐</span>
+        <button id="closeMobileMenu" class="icon-button" aria-label="关闭导航"><svg><use href="#i-close"></use></svg></button>
+      </div>
+      <nav>
+        <a href="#/home"><svg><use href="#i-home"></use></svg>首页</a>
+        <a href="#/culture"><svg><use href="#i-leaf"></use></svg>茶文化</a>
+        <a href="#/regions"><svg><use href="#i-map"></use></svg>山河茶图</a>
+        <a href="#/audit"><svg><use href="#i-chart"></use></svg>数据图谱</a>
+        <a href="#/ai"><svg><use href="#i-spark"></use></svg>AI 茶事</a>
+        <a href="#/community"><svg><use href="#i-users"></use></svg>茶友社区</a>
+        <a href="#/collection"><svg><use href="#i-cup"></use></svg>茶集</a>
+        <a href="#/articles"><svg><use href="#i-message"></use></svg>茶事文章</a>
+        <a href="#/experience"><svg><use href="#i-calendar"></use></svg>茶席体验</a>
+        <a href="#/profile"><svg><use href="#i-user"></use></svg>我的茶库</a>
+      </nav>
+    </div>
+
+    <main id="view" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-seal"><svg><use href="#i-mountain"></use></svg></span>
+        <div>
+          <strong>山隐茶事</strong>
+          <p>以一片茶叶，连接山河、手艺与当代生活。</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#/about">关于我们</a>
+        <a href="#/articles">内容准则</a>
+        <a href="#/experience">体验预约</a>
+        <a href="#/profile">个人中心</a>
+      </div>
+      <p class="footer-note">茶文化生活方式参考 · 网页视觉与交互演示</p>
+    </footer>
+
+    <button class="ai-floating" id="aiFloating" aria-label="打开 AI 茶事顾问">
+      <span>问茶</span><svg><use href="#i-spark"></use></svg>
+    </button>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+      <div class="search-head">
+        <svg><use href="#i-search"></use></svg>
+        <input id="globalSearch" placeholder="搜索茶山、茶类、文章或茶席" autocomplete="off">
+        <button id="closeSearch" aria-label="关闭搜索"><kbd>Esc</kbd></button>
+      </div>
+      <h2 id="searchTitle" hidden>全站搜索</h2>
+      <p class="search-hint">输入关键词，或试试“岩茶”“景迈山”“夜茶”。</p>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="modal-layer" id="modalLayer" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="关闭"><svg><use href="#i-close"></use></svg></button>
+      <div id="modalContent"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
